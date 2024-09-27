@@ -21,7 +21,7 @@ public class TP1_guessMyNumber_BIGOT {
         int cmp=1;
         int niv;
         //System.out.println(a);
-        System.out.println("choisissez un niveau de difficulté");
+        System.out.println("choisissez un niveau de difficulte");
         System.out.println("1) facile");
         System.out.println("2) moyen");
         System.out.println("3) difficile");
@@ -42,7 +42,7 @@ public class TP1_guessMyNumber_BIGOT {
             }// TODO code application logic here
         }
         else if (niv==2){
-            while (guess != a || cmp<15) {
+            while (guess != a && cmp<15) {
                 cmp+=1;
                 System.out.println("devinez le nombre");
                 guess = sc.nextInt();
@@ -57,7 +57,7 @@ public class TP1_guessMyNumber_BIGOT {
             }// TODO code application logic here
         }
         else if (niv==3){
-            while (cmp<7 || guess != a) {
+            while (cmp<7 && guess != a) {
                 cmp+=1;
                 System.out.println("devinez le nombre");
                 guess = sc.nextInt();
