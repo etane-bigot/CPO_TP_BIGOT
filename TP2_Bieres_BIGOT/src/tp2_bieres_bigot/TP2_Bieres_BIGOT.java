@@ -29,6 +29,16 @@ public class TP2_Bieres_BIGOT {
         System.out.println(troisiemebiere);
         troisiemebiere.Decapsuler();
         System.out.println(troisiemebiere);
+        BouteilleBiere quatriemebiere = new BouteilleBiere("86", 10.5 ,"lubullule") ;
+        quatriemebiere.lireEtiquette();
+        System.out.println(quatriemebiere);
+        quatriemebiere.Decapsuler();
+        System.out.println(quatriemebiere);
+        BouteilleBiere cinquiemebiere = new BouteilleBiere("paix dieux", 10.0 ,"tire bouchon") ;
+        cinquiemebiere.lireEtiquette();
+        System.out.println(cinquiemebiere);
+        cinquiemebiere.Decapsuler();
+        System.out.println(cinquiemebiere);
     }
     
 }
