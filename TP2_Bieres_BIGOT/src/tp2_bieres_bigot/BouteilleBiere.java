@@ -18,12 +18,13 @@ public class BouteilleBiere {
         " degres) \nBrasserie : " + brasserie ) ;
     }
     public boolean Decapsuler(){
-        if(ouverte==true){
+        if(!ouverte){
+            ouverte=true;
+            System.out.println("la biere "+nom+" a ete ouverte");
+            return true;
+        }else{
             System.out.println("erreur la biere est deja ouverte");
             return false;
-        }else{
-            System.out.println("la biere a ete ouverte");
-            return true;
         }
     }
     public BouteilleBiere(String unNom, double unDegre, String uneBrasserie){
@@ -32,6 +33,15 @@ public class BouteilleBiere {
         brasserie = uneBrasserie; 
         ouverte = false; 
     }
+    @Override 
+    public String toString() { 
+        String chaine_a_retourner; 
+        chaine_a_retourner = nom + " (" + degreAlcool + " degrés) Ouverte ? ";   
+        if (ouverte == true ) chaine_a_retourner += "oui" ; 
+        else chaine_a_retourner += "non" ; 
+        return chaine_a_retourner ;  
+    } 
+    
 }
 
 
