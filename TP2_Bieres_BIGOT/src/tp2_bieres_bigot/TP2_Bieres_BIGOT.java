@@ -16,9 +16,19 @@ public class TP2_Bieres_BIGOT {
     public static void main(String[] args) {
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls", 7.0 ,"Dubuisson") ;
         uneBiere.lireEtiquette();
+        System.out.println(uneBiere);
+        uneBiere.Decapsuler();
+        System.out.println(uneBiere);
         BouteilleBiere autreBiere = new BouteilleBiere("Leffe", 6.6 ,"Abbaye de Leffe") ;
         autreBiere.lireEtiquette();
+        System.out.println(autreBiere);
         autreBiere.Decapsuler();
+        System.out.println(autreBiere);
+        BouteilleBiere troisiemebiere = new BouteilleBiere("Pelican", 7.5 ,"novelty") ;
+        troisiemebiere.lireEtiquette();
+        System.out.println(troisiemebiere);
+        troisiemebiere.Decapsuler();
+        System.out.println(troisiemebiere);
     }
     
 }
